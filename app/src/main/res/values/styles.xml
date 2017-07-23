@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.Material</item>
+        <item name="asp_preferenceIconTint">?colorAccent</item>
+        <item name="asp_preferenceDialogIconTint">?asp_preferenceIconTint</item>
+
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/profileTag</item>
+        <item name="colorControlActivated">@color/profileTag</item>
+
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Small">
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

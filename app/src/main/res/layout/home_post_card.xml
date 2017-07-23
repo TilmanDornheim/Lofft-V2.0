@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clipToPadding="false"
+              android:clipChildren="false"
+
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/home_card"
+
+
+
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/home_post_header"
+                android:id="@+id/home_card_include"
+                />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_card_expandable"
+                app:ael_duration="300"
+                app:ael_orientation="vertical"
+                android:layout_below="@id/home_card_include"
+
+
+
+                >
+
+                <include
+                    layout="@layout/home_post_content"/>
+
+
+
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

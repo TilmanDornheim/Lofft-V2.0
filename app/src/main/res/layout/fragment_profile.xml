@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/profile_background"
+            android:background="@android:color/white"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/profile_location_icon"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/profile_location_icon"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Leverkusen"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/profile_location_text"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    ></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    >
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_stars_white_48dp"
+                            android:id="@+id/profile_star"
+
+                            />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:id="@+id/profile_Picture"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/profile_name_drag_bg"
+
+            >
+
+            <com.chauthai.swipereveallayout.SwipeRevealLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mode="same_level"
+                app:dragEdge="right"
+
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/orange"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_report_white_24dp"
+
+                                />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cyan"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_chat_bubble_outline_white_24dp"
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </FrameLayout>
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="Tilman Dornheim"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="36sp"
+                        android:id="@+id/profile_Name"
+
+
+                        />
+
+
+                </FrameLayout>
+
+
+
+
+
+
+            </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profile_TagRecycler"
+
+                ></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55">
+
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/profile_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                android:clickable="true"
+                android:focusable="true"
+                app:tabGravity="fill"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/profile_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

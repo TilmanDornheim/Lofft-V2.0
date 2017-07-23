@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:umanoPanelHeight="50dp"
+    app:umanoShadowHeight="4dp"
+    app:umanoFadeColor="#00000000"
+    android:id="@+id/home_map_slide"
+
+    >
+
+<android.support.design.widget.CoordinatorLayout
+
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="false"
+              android:clipChildren="false"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_pullRefresh"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/home_Recycler"
+
+
+
+
+        >
+
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_appbar"
+
+        >
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|enterAlways"
+
+            >
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                android:clipToPadding="false"
+                app:elevation="10dp"
+
+                app:layout_collapseMode="pin">
+
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/home_categories_recycler"
+                        android:layout_marginStart="0dp"
+
+                        ></android.support.v7.widget.RecyclerView>
+
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/home_map_panel"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_map_black_36dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home_map_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                >
+
+            </fragment>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
+
+
+
+

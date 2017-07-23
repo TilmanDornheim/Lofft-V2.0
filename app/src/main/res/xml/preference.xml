@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="General">
+
+            <CheckBoxPreference
+                android:key="pref_general_notifications"
+                android:title="Receive Notifications"
+                android:summary="You will be notified of any bids, messages or interesting posts"
+                android:defaultValue="true"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Account">
+
+
+            <Preference
+                android:title="Email"
+                android:summary="t.dornheim@student.maastrichtuniversity.nl"
+                />
+
+            <Preference
+                android:title="Social Media"
+                android:summary="Connect your social media to share your posts and bids"
+                />
+
+            <Preference
+                android:title="History"
+                android:summary="See your history of posts, bids, and groups"
+                />
+
+
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Interface">
+
+            <CheckBoxPreference
+                android:key="pref_interface_openMenu"
+                android:title="Open Screen on Selection"
+                android:summary="When selecting a menu item, it will automatically fullscreen your selection"
+                android:defaultValue="false"
+                />
+
+            <CheckBoxPreference
+                android:key="pref_interface_longPress"
+                android:title="Single Filter Category"
+                android:summary="Long Press a category in the home screen filter to single it"
+                android:defaultValue="true"
+                />
+
+            <CheckBoxPreference
+                android:key="pref_interface_doubleClick"
+                android:title="Select All Categories"
+                android:summary="Double tap any category in the home screen filter to select all categories"
+                android:defaultValue="true"
+                />
+
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

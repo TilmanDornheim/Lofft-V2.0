@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "lofft.lofftv20"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.yarolegovich:sliding-root-nav:1.0.2'
+    compile 'com.android.support:support-compat:25.4.0'
+    compile 'com.android.support:cardview-v7:25.4.0'
+    compile 'com.android.support:recyclerview-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.0'
+    compile 'com.android.support:preference-v7:25.4.0'
+    compile 'net.xpece.android:support-preference:1.2.7'
+    compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
+    compile 'me.grantland:autofittextview:0.2.1'
+    compile 'me.zhanghai.android.materialratingbar:library:1.0.2'
+    compile 'net.cachapa.expandablelayout:expandablelayout:2.9.1'
+    compile 'com.github.traex.expandablelayout:library:1.2.2'
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    compile 'com.github.Yalantis:SearchFilter:v1.0.4'
+    compile 'com.thesurix.gesturerecycler:gesture-recycler:1.3.1'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
+
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.02"
+            android:background="@color/orange"
+            android:id="@+id/home_card_category_header"
+            >
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.98"
+            android:background="@color/homeCardBG"
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/home_card_picture"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Tilman Dornheim"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/home_card_name"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    />
+
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:theme="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+                    android:isIndicator="true"
+                    android:stepSize="0.5"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    app:mrb_progressTint="@color/profileTag"
+                    app:mrb_progressBackgroundTint="@color/textColorSecondary"
+                    app:mrb_secondaryProgressTint="@color/textColorSecondary"
+                    android:rating="3.5"
+                    android:id="@+id/home_card_rating"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:textColor="@color/textColorSecondary"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Mountain Bike"
+                    android:id="@+id/home_card_title"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14sp"
+                    android:text="I need a tv"
+                    android:id="@+id/home_card_description"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
